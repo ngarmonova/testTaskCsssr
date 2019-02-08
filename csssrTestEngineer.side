@@ -1,0 +1,950 @@
+{
+  "id": "a97d375a-84d1-4f8c-9254-ce6f4782fd82",
+  "version": "2.0",
+  "name": "csssrTestEngineer",
+  "url": "http://blog.csssr.ru",
+  "tests": [{
+    "id": "7080e39a-6f9d-4d61-9d5d-58aafad9b299",
+    "name": "Tab1_checkboxes",
+    "commands": [{
+      "id": "e961fe8f-e09e-4fed-88db-e2c354f27432",
+      "comment": "",
+      "command": "open",
+      "target": "/qa-engineer/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "35071615-b238-452a-b2ce-cfce696d25d2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b54e187c-2278-425d-97b0-937074687f9a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=ВНИКАТЬ В ДЕТАЛИ ПРОЕКТОВ",
+      "targets": [
+        ["linkText=ВНИКАТЬ В ДЕТАЛИ ПРОЕКТОВ", "linkText"],
+        ["css=.graphs-details > a", "css:finder"],
+        ["css=a", "css"],
+        ["xpath=//a[contains(text(),'ВНИКАТЬ В ДЕТАЛИ ПРОЕКТОВ')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": "ВНИКАТЬ В ДЕТАЛИ ПРОЕКТОВ"
+    }, {
+      "id": "48870178-78d5-4bbd-94e7-dfe4ee5becb4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.info-details > h1",
+      "targets": [
+        ["css=.info-details > h1", "css:finder"],
+        ["css=div.info-details > h1", "css"],
+        ["xpath=//section[2]/div/h1", "xpath:position"]
+      ],
+      "value": "Работать с описаниями проектов и находить в них информацию.\\nПо необходимости дополнять ее."
+    }, {
+      "id": "9ebe0ed7-6276-4a2f-80b7-5e224497cf38",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=attention",
+      "targets": [
+        ["css=.info-details > h1", "css:finder"],
+        ["css=div.info-details > h1", "css"],
+        ["xpath=//section[2]/div/h1", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "82c94694-92e4-4a91-91b0-cc0705457cbb",
+      "comment": "",
+      "command": "verifyChecked",
+      "target": "id=attention",
+      "targets": [
+        ["css=.info-details li:nth-child(1) > label", "css:finder"],
+        ["css=label", "css"],
+        ["xpath=//label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a4ccd30-7430-4244-96bb-5a91f172d387",
+      "comment": "",
+      "command": "click",
+      "target": "css=.info-details li:nth-child(1) > label",
+      "targets": [
+        ["css=.info-details li:nth-child(1) > label", "css:finder"],
+        ["css=label", "css"],
+        ["xpath=//label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9bad20e-a914-4bff-b2c0-56994cd972bc",
+      "comment": "",
+      "command": "verifyNotChecked",
+      "target": "id=attention",
+      "targets": [
+        ["linkText=НАХОДИТЬ НЕСОВЕРШЕНСТВА", "linkText"],
+        ["css=.graphs-errors > a", "css:finder"],
+        ["css=div.graphs-errors > a", "css"],
+        ["xpath=//a[contains(text(),'НАХОДИТЬ НЕСОВЕРШЕНСТВА')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9323ca4-2fc0-4020-ba94-69765bce2136",
+      "comment": "",
+      "command": "click",
+      "target": "css=.info-details li:nth-child(1) > label",
+      "targets": [
+        ["css=.info-details li:nth-child(1) > label", "css:finder"],
+        ["css=label", "css"],
+        ["xpath=//label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "57cc832f-ab55-405c-9151-83c3847f9329",
+      "comment": "",
+      "command": "verifyChecked",
+      "target": "id=attention",
+      "targets": [
+        ["css=.info-details li:nth-child(1) > label", "css:finder"],
+        ["css=label", "css"],
+        ["xpath=//label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a297dd3-7dc9-457c-a9cb-009c3e2057fd",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=logic",
+      "targets": [
+        ["css=.info-details li:nth-child(1) > label", "css:finder"],
+        ["css=label", "css"],
+        ["xpath=//label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51f0b559-aa2e-4723-812f-8aae96350116",
+      "comment": "",
+      "command": "verifyChecked",
+      "target": "id=logic",
+      "targets": [
+        ["css=.info-details li:nth-child(2) > label", "css:finder"],
+        ["xpath=//li[2]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e6fd4e2-39a5-4d77-9e20-3878342f86ee",
+      "comment": "",
+      "command": "click",
+      "target": "css=.info-details li:nth-child(2) > label",
+      "targets": [
+        ["css=.info-details li:nth-child(2) > label", "css:finder"],
+        ["xpath=//li[2]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef6306c0-9997-45f9-8f21-fe9587cdbb48",
+      "comment": "",
+      "command": "verifyNotChecked",
+      "target": "id=logic",
+      "targets": [
+        ["css=.info-details li:nth-child(1) > label", "css:finder"],
+        ["css=label", "css"],
+        ["xpath=//label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eba8b80b-76d2-4bb5-99cd-eadd6303f155",
+      "comment": "",
+      "command": "click",
+      "target": "css=.info-details li:nth-child(2) > label",
+      "targets": [
+        ["css=.info-details li:nth-child(2) > label", "css:finder"],
+        ["xpath=//li[2]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "46e54620-bd85-4f10-ae7f-099dec0bbab8",
+      "comment": "",
+      "command": "verifyChecked",
+      "target": "id=logic",
+      "targets": [
+        ["css=.info-details li:nth-child(2) > label", "css:finder"],
+        ["xpath=//li[2]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8856d1d6-9d9c-4992-800b-479f5bf8b678",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e373ea61-65bb-4059-af6d-f96d27d39047",
+    "name": "Tab2_Checkboxes",
+    "commands": [{
+      "id": "98dea597-ebcd-4fef-80cd-220c4a626595",
+      "comment": "",
+      "command": "open",
+      "target": "/qa-engineer/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "63723b85-ef5f-49ba-b327-2a5b134a2f77",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "923dda68-30e8-4989-acd4-b8e4c7e54ddb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=НАХОДИТЬ НЕСОВЕРШЕНСТВА",
+      "targets": [
+        ["linkText=НАХОДИТЬ НЕСОВЕРШЕНСТВА", "linkText"],
+        ["css=.graphs-errors > a", "css:finder"],
+        ["css=div.graphs-errors > a", "css"],
+        ["xpath=//a[contains(text(),'НАХОДИТЬ НЕСОВЕРШЕНСТВА')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e415814b-8499-4ccf-ba4d-2774db36ead1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=НАХОДИТЬ НЕСОВЕРШЕНСТВА",
+      "targets": [
+        ["linkText=НАХОДИТЬ НЕСОВЕРШЕНСТВА", "linkText"],
+        ["css=.graphs-errors > a", "css:finder"],
+        ["css=div.graphs-errors.graph-active > a", "css"],
+        ["xpath=//a[contains(text(),'НАХОДИТЬ НЕСОВЕРШЕНСТВА')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"]
+      ],
+      "value": "НАХОДИТЬ НЕСОВЕРШЕНСТВА"
+    }, {
+      "id": "98dc7cec-50c0-4cc7-89d4-102dab689740",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.info-errors > h1",
+      "targets": [
+        ["css=.info-errors > h1", "css:finder"],
+        ["css=div.info-errors > h1", "css"],
+        ["xpath=//section[2]/div[2]/h1", "xpath:position"]
+      ],
+      "value": "Находить баги и несоответствия исходному дизайну в верстке наших проектов. Тестировать их с точки зрения удобства для пользователя. И указывать разработчикам на несовершенства."
+    }, {
+      "id": "9e186a61-c74a-490c-9a9a-dc1d978187f8",
+      "comment": "",
+      "command": "//проверяем первый чекбокс",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3276fa57-1acd-4ebe-9c98-f2111057b1cf",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=eye",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e0847fc-1ded-4236-a5e6-21b9e6c561e3",
+      "comment": "",
+      "command": "verifyChecked",
+      "target": "id=eye",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "239479a1-8d28-4b70-8dc5-0a0f03c3e0ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.info-errors li:nth-child(1) > label",
+      "targets": [
+        ["css=.info-errors li:nth-child(1) > label", "css:finder"],
+        ["css=div.info-errors > aside > ul > li > label", "css"],
+        ["xpath=//div[2]/aside/ul/li/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6c09a22-834c-4b73-bdc4-8b8bf96956ce",
+      "comment": "",
+      "command": "verifyNotChecked",
+      "target": "id=eye",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "25d596e2-ffc5-4d3c-9eeb-acc5707c525e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.info-errors li:nth-child(1) > label",
+      "targets": [
+        ["css=.info-errors li:nth-child(1) > label", "css:finder"],
+        ["css=div.info-errors > aside > ul > li > label", "css"],
+        ["xpath=//div[2]/aside/ul/li/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a615fd3-0b51-44bd-9004-ebc30eab6e87",
+      "comment": "",
+      "command": "verifyChecked",
+      "target": "id=eye",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c21b57d-f5ea-4a3a-bcc5-79dcc215fb42",
+      "comment": "",
+      "command": "//проверяем второй чекбокс",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2f67b36-0f6c-49ab-bc80-6a1d939a1432",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=beautiful",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0ed38ee3-c803-437d-a853-997a7cd19826",
+      "comment": "",
+      "command": "verifyChecked",
+      "target": "id=beautiful",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "54d07004-0b0e-4cea-b8d6-3155ec0eee9c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.info-errors li:nth-child(2) > label",
+      "targets": [
+        ["css=.info-errors li:nth-child(2) > label", "css:finder"],
+        ["xpath=//div[2]/aside/ul/li[2]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1f516fe-46e5-475b-8307-62fa52176fe4",
+      "comment": "",
+      "command": "verifyNotChecked",
+      "target": "id=beautiful",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e325b326-e146-4a15-8caf-25cad22b2874",
+      "comment": "",
+      "command": "click",
+      "target": "css=.info-errors li:nth-child(2) > label",
+      "targets": [
+        ["css=.info-errors li:nth-child(2) > label", "css:finder"],
+        ["xpath=//div[2]/aside/ul/li[2]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e46419b-4589-41b6-83f9-572dd12d5954",
+      "comment": "",
+      "command": "verifyChecked",
+      "target": "id=beautiful",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c655500a-d267-4499-b807-1a49dde1377b",
+      "comment": "",
+      "command": "//проверяем третий чекбокс",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f0c4bace-2c6a-4dd5-aafe-d978b75fe119",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=tasks",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b275e275-d780-42f5-bb29-c27b7821fd7e",
+      "comment": "",
+      "command": "verifyChecked",
+      "target": "id=tasks",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1007c92b-d82d-4f2b-9b05-f12da4fbd21e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.info-errors li:nth-child(3) > label",
+      "targets": [
+        ["css=.info-errors li:nth-child(3) > label", "css:finder"],
+        ["xpath=//li[3]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f1c9234-16d9-4c9d-b68d-85d185a86696",
+      "comment": "",
+      "command": "verifyNotChecked",
+      "target": "id=tasks",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "082f6334-1558-4b84-831b-bc78be873b84",
+      "comment": "",
+      "command": "click",
+      "target": "css=.info-errors li:nth-child(3) > label",
+      "targets": [
+        ["css=.info-errors li:nth-child(3) > label", "css:finder"],
+        ["xpath=//li[3]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0de9e4ae-5bee-4b75-a983-7ddd7b494464",
+      "comment": "",
+      "command": "verifyChecked",
+      "target": "id=tasks",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5bf43887-870a-4df4-bc5b-1b2c4518fcee",
+      "comment": "",
+      "command": "//проверяем четвертый чекбокс",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ad844e64-4044-4a05-9199-f14f45e38682",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=soft",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "762d25e0-33e8-4f8f-a3bb-618f5de6a907",
+      "comment": "",
+      "command": "verifyChecked",
+      "target": "id=soft",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fbf39ade-3020-43d3-b290-2b63cfbd347d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.info-errors li:nth-child(4) > label",
+      "targets": [
+        ["css=.info-errors li:nth-child(4) > label", "css:finder"],
+        ["xpath=//li[4]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d3ea208-72dd-448f-99c1-86b8fbe8a5b3",
+      "comment": "",
+      "command": "verifyNotChecked",
+      "target": "id=soft",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67f70123-9c0d-4534-ab8e-dc0f7188ad2b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.info-errors li:nth-child(4) > label",
+      "targets": [
+        ["css=.info-errors li:nth-child(4) > label", "css:finder"],
+        ["xpath=//li[4]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6fd8a3cb-c5e9-4cba-b25d-1ee8b8b10ab3",
+      "comment": "",
+      "command": "verifyChecked",
+      "target": "id=soft",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9811c42d-c689-4482-b582-391d0d56157d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "37d8c3bf-34c9-4966-9966-cac0637e8400",
+    "name": "Tab3_Checkboxes",
+    "commands": [{
+      "id": "bf4a34d5-34a3-431e-a413-fcf0ac385264",
+      "comment": "",
+      "command": "open",
+      "target": "/qa-engineer/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49735dd1-2bd8-444c-840c-f7ab2558746e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9328614f-6290-403f-9529-bb4549e22cbd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=СОПРОВОЖДАТЬ ПРОЕКТЫ",
+      "targets": [
+        ["linkText=СОПРОВОЖДАТЬ ПРОЕКТЫ", "linkText"],
+        ["css=.graphs-support > a", "css:finder"],
+        ["css=div.graphs-support > a", "css"],
+        ["xpath=//a[contains(text(),'СОПРОВОЖДАТЬ ПРОЕКТЫ')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04067d7a-41c0-4855-bfbb-75df18ba739f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=СОПРОВОЖДАТЬ ПРОЕКТЫ",
+      "targets": [
+        ["linkText=СОПРОВОЖДАТЬ ПРОЕКТЫ", "linkText"],
+        ["css=.graphs-support > a", "css:finder"],
+        ["css=div.graphs-support.graph-active > a", "css"],
+        ["xpath=//a[contains(text(),'СОПРОВОЖДАТЬ ПРОЕКТЫ')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"]
+      ],
+      "value": "СОПРОВОЖДАТЬ ПРОЕКТЫ"
+    }, {
+      "id": "28bc2f55-7e6d-4c89-af4f-00f2d1a47ea4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.info-support > h1",
+      "targets": [
+        ["css=.info-support > h1", "css:finder"],
+        ["css=div.info-support > h1", "css"],
+        ["xpath=//section[2]/div[3]/h1", "xpath:position"]
+      ],
+      "value": "Распределять задачи между разработчиками. Отвечать на вопросы разработчиков. Контролировать выполнение задач. Информировать менеджера проекта о нештатных ситуациях. Связываться с заказчиками и уточнять информацию."
+    }, {
+      "id": "2b964fb8-5926-4866-9b7b-d34b32abbf79",
+      "comment": "",
+      "command": "//проверяем первый чекбокс",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c63da7cc-25b4-42c8-8250-1a69902cb891",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=attention2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87b26e1d-dfe7-4221-be9d-3065f4103442",
+      "comment": "",
+      "command": "verifyChecked",
+      "target": "id=attention2",
+      "targets": [
+        ["css=.info-details li:nth-child(1) > label", "css:finder"],
+        ["css=label", "css"],
+        ["xpath=//label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4af184f-7b4e-4177-b722-44592fea2835",
+      "comment": "",
+      "command": "click",
+      "target": "css=.info-support li:nth-child(1) > label",
+      "targets": [
+        ["css=.info-support li:nth-child(1) > label", "css:finder"],
+        ["css=div.info-support > aside > ul > li > label", "css"],
+        ["xpath=//div[3]/aside/ul/li/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b96c07e6-0ac0-46fc-ace3-a1e246e73359",
+      "comment": "",
+      "command": "verifyNotChecked",
+      "target": "id=attention2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f60af8e4-2540-49dd-87d0-b8e3d697d784",
+      "comment": "",
+      "command": "click",
+      "target": "css=.info-support li:nth-child(1) > label",
+      "targets": [
+        ["css=.info-support li:nth-child(1) > label", "css:finder"],
+        ["css=div.info-support > aside > ul > li > label", "css"],
+        ["xpath=//div[3]/aside/ul/li/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f116b5f-67ac-4c61-a252-7cce95057b0b",
+      "comment": "",
+      "command": "verifyChecked",
+      "target": "id=attention2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d964068-476c-4e9d-8d30-c61ed8c6f25f",
+      "comment": "",
+      "command": "//второй чекбокс",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c495e4cb-d561-47c0-8a67-a25d5312195b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=responsibility",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "133f4a34-3bf3-4f9d-9096-a8d3a8d3cb8f",
+      "comment": "",
+      "command": "verifyChecked",
+      "target": "id=responsibility",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0eab5db0-c1f2-4355-8cdf-10e24c16c0d0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.info-support li:nth-child(2) > label",
+      "targets": [
+        ["css=.info-support li:nth-child(2) > label", "css:finder"],
+        ["xpath=//div[3]/aside/ul/li[2]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "743c4ce4-ab91-476f-903f-522a2c75a081",
+      "comment": "",
+      "command": "verifyNotChecked",
+      "target": "id=responsibility",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e9a07fb-73a3-41a9-8abf-d3a2d441f65a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.info-support li:nth-child(2) > label",
+      "targets": [
+        ["css=.info-support li:nth-child(2) > label", "css:finder"],
+        ["xpath=//div[3]/aside/ul/li[2]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8880344-a452-4dac-8d00-5c86c75012c7",
+      "comment": "",
+      "command": "verifyChecked",
+      "target": "id=responsibility",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "416e541e-f882-49c0-bdd5-19ab872b52ff",
+      "comment": "",
+      "command": "//третий чекбокс",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df7a8dbe-0e36-4e15-b4e2-2e7bb53eff03",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=parallel",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c62bfe4c-dae1-4d57-b0b6-bb687e0c61cf",
+      "comment": "",
+      "command": "verifyChecked",
+      "target": "id=parallel",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ffcb8c25-4370-4c1d-9b74-cfa557735fe2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.info-support li:nth-child(3) > label",
+      "targets": [
+        ["css=.info-support li:nth-child(3) > label", "css:finder"],
+        ["xpath=//div[3]/aside/ul/li[3]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26d1ccd2-8f14-475e-91ea-fb6593786ba6",
+      "comment": "",
+      "command": "verifyNotChecked",
+      "target": "id=parallel",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "131f0b55-94c2-4449-ba85-5035d591072b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.info-support li:nth-child(3) > label",
+      "targets": [
+        ["css=.info-support li:nth-child(3) > label", "css:finder"],
+        ["xpath=//div[3]/aside/ul/li[3]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "805b6645-a2d0-48e4-9276-b01ecfc6b862",
+      "comment": "",
+      "command": "verifyChecked",
+      "target": "id=parallel",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "99c765bc-7c3e-437c-b0f4-c72e28924323",
+      "comment": "",
+      "command": "//четвертый чекбокс",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9823e029-c215-44cd-b7ae-1e9b004e9932",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=logic2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7fa2151a-eea7-4ab1-939d-436d50253951",
+      "comment": "",
+      "command": "verifyChecked",
+      "target": "id=logic2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "10992fd1-dff0-48aa-ad87-9e68d8d8f153",
+      "comment": "",
+      "command": "click",
+      "target": "css=.info-support li:nth-child(4) > label",
+      "targets": [
+        ["css=.info-support li:nth-child(4) > label", "css:finder"],
+        ["xpath=//div[3]/aside/ul/li[4]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6cf28f4f-594f-441a-9aa4-ede9f9b01329",
+      "comment": "",
+      "command": "verifyNotChecked",
+      "target": "id=logic2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "563207a8-cd4b-429d-bece-e411465c0f23",
+      "comment": "",
+      "command": "click",
+      "target": "css=.info-support li:nth-child(4) > label",
+      "targets": [
+        ["css=.info-support li:nth-child(4) > label", "css:finder"],
+        ["xpath=//div[3]/aside/ul/li[4]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4e60f10-aa8d-442c-ac90-896834efa533",
+      "comment": "",
+      "command": "verifyChecked",
+      "target": "id=logic2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "483fd87a-9af5-4945-a7f6-028da7ab0770",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4d70cfb3-0cb2-409b-ba5e-03fb536d377e",
+    "name": "Tab4_Checkboxes",
+    "commands": [{
+      "id": "2565c9cb-cc91-4173-9308-a625b7ec77d1",
+      "comment": "",
+      "command": "open",
+      "target": "/qa-engineer/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "11bc0d73-a49a-4a1c-911d-3e07e6cccddd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9bb62e8-2e2f-48c5-82a2-f06947307744",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=РАБОТАТЬ С ФАЙЛАМИ ПРОЕКТОВ",
+      "targets": [
+        ["linkText=РАБОТАТЬ С ФАЙЛАМИ ПРОЕКТОВ", "linkText"],
+        ["css=.graphs-files > a", "css:finder"],
+        ["css=div.graphs-files > a", "css"],
+        ["xpath=//a[contains(text(),'РАБОТАТЬ С ФАЙЛАМИ ПРОЕКТОВ')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//div[4]/a", "xpath:position"]
+      ],
+      "value": "РАБОТАТЬ С ФАЙЛАМИ ПРОЕКТОВ"
+    }, {
+      "id": "4dcc637f-fd2f-4389-ad50-cee18b9a8c58",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=РАБОТАТЬ С ФАЙЛАМИ ПРОЕКТОВ",
+      "targets": [
+        ["linkText=РАБОТАТЬ С ФАЙЛАМИ ПРОЕКТОВ", "linkText"],
+        ["css=.graphs-files > a", "css:finder"],
+        ["css=div.graphs-files > a", "css"],
+        ["xpath=//a[contains(text(),'РАБОТАТЬ С ФАЙЛАМИ ПРОЕКТОВ')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//div[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba072bd1-25c2-4087-906f-b6d087eae60d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.info-files > h1",
+      "targets": [
+        ["css=.info-files > h1", "css:finder"],
+        ["css=div.info-files > h1", "css"],
+        ["xpath=//div[4]/h1", "xpath:position"]
+      ],
+      "value": "Иногда нужно будет работать непосредственно с файлами проектов: переименовывать их, или вырезать из них графику при помощи Photoshop."
+    }, {
+      "id": "da81ca0c-db53-4ca7-930e-4d2865796884",
+      "comment": "",
+      "command": "//первый чекбокс",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ee9238e6-7819-42b1-98f3-0b03b4463658",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=chaos",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a67152d5-ef5f-4fba-b48f-f2ac40a406c6",
+      "comment": "",
+      "command": "verifyChecked",
+      "target": "id=chaos",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79de5b04-c742-4bc6-8ca3-1a9cec352f92",
+      "comment": "",
+      "command": "click",
+      "target": "css=aside:nth-child(3) li:nth-child(1) > label",
+      "targets": [
+        ["css=aside:nth-child(3) li:nth-child(1) > label", "css:finder"],
+        ["css=div.info-files > aside > ul > li > label", "css"],
+        ["xpath=//div[4]/aside/ul/li/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "edb337ed-903d-4d4d-b3db-860c2d9e1874",
+      "comment": "",
+      "command": "verifyNotChecked",
+      "target": "id=chaos",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "881f7b85-0f9d-454b-97e3-36908b1dfa6c",
+      "comment": "",
+      "command": "click",
+      "target": "css=aside:nth-child(3) li:nth-child(1) > label",
+      "targets": [
+        ["css=aside:nth-child(3) li:nth-child(1) > label", "css:finder"],
+        ["css=div.info-files > aside > ul > li > label", "css"],
+        ["xpath=//div[4]/aside/ul/li/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8f301cc-bbb6-4c23-bf4e-1575d97b2df2",
+      "comment": "",
+      "command": "verifyChecked",
+      "target": "id=chaos",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28e759c4-b7a5-42b7-92b6-027ebe0b065d",
+      "comment": "",
+      "command": "//второй чекбокс",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b0f1f547-d5df-4304-aee1-23a75d979614",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=beautiful2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "905546ac-3cb6-4c10-80f5-6cae7561644a",
+      "comment": "",
+      "command": "verifyChecked",
+      "target": "id=beautiful2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd9542d7-9d39-4937-a70e-aafb96223ae2",
+      "comment": "",
+      "command": "click",
+      "target": "css=aside:nth-child(3) li:nth-child(2) > label",
+      "targets": [
+        ["css=aside:nth-child(3) li:nth-child(2) > label", "css:finder"],
+        ["xpath=//div[4]/aside/ul/li[2]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "14439897-c10d-4ea3-a3f3-7db2a623a127",
+      "comment": "",
+      "command": "verifyNotChecked",
+      "target": "id=beautiful2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b980aa10-4570-4b25-8496-22f507bac1cc",
+      "comment": "",
+      "command": "click",
+      "target": "css=aside:nth-child(3) li:nth-child(2) > label",
+      "targets": [
+        ["css=aside:nth-child(3) li:nth-child(2) > label", "css:finder"],
+        ["xpath=//div[4]/aside/ul/li[2]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3dc67d34-0613-4496-9ea8-6e79522bde05",
+      "comment": "",
+      "command": "verifyChecked",
+      "target": "id=beautiful2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "18764761-acb9-46b7-9277-90d932b8ae00",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b2a31304-833a-4df6-9a33-9e89aad5c6f3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7080e39a-6f9d-4d61-9d5d-58aafad9b299"]
+  }],
+  "urls": ["http://blog.csssr.ru/"],
+  "plugins": []
+}
